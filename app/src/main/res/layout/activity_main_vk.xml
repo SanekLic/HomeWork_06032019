@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainVkActivity">
+
+    <ImageView
+        android:id="@+id/vkPhotoImageView"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_user_photo" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainVkToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userNameVkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Aliaksandr Litskevich"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/onlineStateTextView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/onlineStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="online"
+        android:textColor="@color/colorVkGray"
+        app:layout_constraintBottom_toBottomOf="@+id/vkPhotoImageView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/changeVkPhotoButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_camera_alt_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/vkPhotoImageView"
+        app:layout_constraintDimensionRatio="w,1:1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/usedDeviceImageView"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/onlineStateTextView"
+        app:layout_constraintStart_toEndOf="@+id/onlineStateTextView"
+        app:layout_constraintTop_toTopOf="@+id/onlineStateTextView"
+        app:srcCompat="@drawable/ic_phone_android_gray" />
+
+    <Button
+        android:id="@+id/editProfileButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_corners_shape"
+        android:text="Edit"
+        android:textAllCaps="false"
+        android:textColor="@color/colorVkBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vkPhotoImageView" />
+
+    <ImageView
+        android:id="@+id/statusIconImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editProfileButton"
+        app:srcCompat="@drawable/ic_status_bubble_gray" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Change status"
+        app:layout_constraintBottom_toBottomOf="@+id/statusIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/statusIconImageView"
+        app:layout_constraintTop_toTopOf="@+id/statusIconImageView" />
+
+    <ImageView
+        android:id="@+id/friendsIconImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusIconImageView"
+        app:srcCompat="@drawable/ic_people_gray" />
+
+    <TextView
+        android:id="@+id/friendsCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="100 friends"
+        app:layout_constraintBottom_toBottomOf="@+id/friendsIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/friendsIconImageView"
+        app:layout_constraintTop_toTopOf="@+id/friendsIconImageView" />
+
+    <ImageView
+        android:id="@+id/homeIconImageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendsIconImageView"
+        app:srcCompat="@drawable/ic_home_gray" />
+
+    <TextView
+        android:id="@+id/homeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Lives in Grodno"
+        app:layout_constraintBottom_toBottomOf="@+id/homeIconImageView"
+        app:layout_constraintStart_toEndOf="@+id/homeIconImageView"
+        app:layout_constraintTop_toTopOf="@+id/homeIconImageView" />
+
+</android.support.constraint.ConstraintLayout>

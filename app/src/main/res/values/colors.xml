@@ -3,4 +3,12 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="colorVkGray">#AAA</color>
+    <color name="colorVkBlue">#FF45678F</color>
+    <color name="colorVkIconGray">#99A2AD</color>
+    <color name="colorVkTextGray">#FF76787A</color>
+    <color name="colorVkMoreInfo">#FF528BCC</color>
+    <color name="colorVkDivider">#FFEBEDF0</color>
+    <color name="colorVkShareIcon">#FFAAAEB3</color>
+    <color name="colorVkNavigation">#FFF9F9F9</color>
 </resources>

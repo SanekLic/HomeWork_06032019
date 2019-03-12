@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_copy_button"
+        android:icon="?attr/actionModeCopyDrawable"
+        android:orderInCategory="200"
+        android:title="Copy link"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_open_in_browser_button"
+        android:orderInCategory="200"
+        android:title="Open in browser"
+        app:showAsAction="never" />
+</menu>

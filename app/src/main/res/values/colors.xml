@@ -11,4 +11,5 @@
     <color name="colorVkDivider">#FFEBEDF0</color>
     <color name="colorVkShareIcon">#FFAAAEB3</color>
     <color name="colorVkNavigation">#FFF9F9F9</color>
+    <color name="colorGooglePodcastsIconToolbar">#FF757575</color>
 </resources>

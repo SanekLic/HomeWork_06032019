@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".MainVkActivity">
 
     <ImageView
         android:id="@+id/vkPhotoImageView"
         android:layout_width="0dp"
-        android:layout_height="250dp"
+        android:layout_height="200dp"
         android:layout_gravity="top"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
@@ -46,7 +47,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginBottom="16dp"
         android:text="online"
-        android:textColor="@color/colorVkGray"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@+id/vkPhotoImageView"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -56,9 +57,8 @@
         android:layout_height="20dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@drawable/ic_camera_alt_gray"
+        android:background="@drawable/ic_camera_alt"
         app:layout_constraintBottom_toBottomOf="@+id/vkPhotoImageView"
-        app:layout_constraintDimensionRatio="w,1:1"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <ImageView
@@ -68,17 +68,17 @@
         app:layout_constraintBottom_toBottomOf="@+id/onlineStateTextView"
         app:layout_constraintStart_toEndOf="@+id/onlineStateTextView"
         app:layout_constraintTop_toTopOf="@+id/onlineStateTextView"
-        app:srcCompat="@drawable/ic_phone_android_gray" />
+        app:srcCompat="@drawable/ic_phone_android" />
 
     <Button
         android:id="@+id/editProfileButton"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="0dp"
-        android:layout_height="32dp"
+        android:layout_height="36dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:background="@drawable/button_corners_shape"
+        android:background="@drawable/bg_button_corners"
         android:text="Edit"
         android:textAllCaps="false"
         android:textColor="@color/colorVkBlue"
@@ -94,14 +94,15 @@
         android:layout_marginTop="24dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editProfileButton"
-        app:srcCompat="@drawable/ic_status_bubble_gray" />
+        app:srcCompat="@drawable/ic_status_bubble" />
 
     <TextView
         android:id="@+id/statusTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:text="Change status"
+        android:textColor="@color/colorVkTextGray"
         app:layout_constraintBottom_toBottomOf="@+id/statusIconImageView"
         app:layout_constraintStart_toEndOf="@+id/statusIconImageView"
         app:layout_constraintTop_toTopOf="@+id/statusIconImageView" />
@@ -114,14 +115,15 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/statusIconImageView"
-        app:srcCompat="@drawable/ic_people_gray" />
+        app:srcCompat="@drawable/ic_peoples" />
 
     <TextView
         android:id="@+id/friendsCountTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:text="100 friends"
+        android:textColor="@color/colorVkTextGray"
         app:layout_constraintBottom_toBottomOf="@+id/friendsIconImageView"
         app:layout_constraintStart_toEndOf="@+id/friendsIconImageView"
         app:layout_constraintTop_toTopOf="@+id/friendsIconImageView" />
@@ -134,16 +136,225 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/friendsIconImageView"
-        app:srcCompat="@drawable/ic_home_gray" />
+        app:srcCompat="@drawable/ic_home" />
 
     <TextView
         android:id="@+id/homeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:text="Lives in Grodno"
+        android:textColor="@color/colorVkTextGray"
         app:layout_constraintBottom_toBottomOf="@+id/homeIconImageView"
         app:layout_constraintStart_toEndOf="@+id/homeIconImageView"
         app:layout_constraintTop_toTopOf="@+id/homeIconImageView" />
+
+    <ImageView
+        android:id="@+id/friendThreeImageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_friend_corners"
+        app:layout_constraintBottom_toBottomOf="@+id/friendsIconImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/friendsIconImageView"
+        app:srcCompat="@drawable/ic_friend_three" />
+
+    <ImageView
+        android:id="@+id/friendTwoImageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="38dp"
+        android:background="@drawable/bg_friend_corners"
+        app:layout_constraintBottom_toBottomOf="@+id/friendsIconImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/friendsIconImageView"
+        app:srcCompat="@drawable/ic_friend_two" />
+
+    <ImageView
+        android:id="@+id/friendOneImageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/bg_friend_corners"
+        app:layout_constraintBottom_toBottomOf="@+id/friendsIconImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/friendsIconImageView"
+        app:srcCompat="@drawable/ic_friend_one" />
+
+    <ImageView
+        android:id="@+id/moreInfoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeIconImageView"
+        app:srcCompat="@drawable/ic_more_info" />
+
+    <TextView
+        android:id="@+id/moreInfoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Show info"
+        android:textColor="@color/colorVkMoreInfo"
+        app:layout_constraintBottom_toBottomOf="@+id/moreInfoImageView"
+        app:layout_constraintStart_toEndOf="@+id/moreInfoImageView"
+        app:layout_constraintTop_toTopOf="@+id/moreInfoImageView" />
+
+    <View
+        android:id="@+id/oneDivider"
+        style="@style/Divider"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moreInfoImageView" />
+
+    <ImageView
+        android:id="@+id/vkPhotoCircyleImageView"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/oneDivider"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/newsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="What's news?"
+        android:textColor="@color/colorVkTextGray"
+        app:layout_constraintBottom_toBottomOf="@+id/vkPhotoCircyleImageView"
+        app:layout_constraintStart_toEndOf="@+id/vkPhotoCircyleImageView"
+        app:layout_constraintTop_toTopOf="@+id/vkPhotoCircyleImageView" />
+
+    <Button
+        android:id="@+id/shareHistoryButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_share_history"
+        app:layout_constraintBottom_toBottomOf="@+id/vkPhotoCircyleImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/vkPhotoCircyleImageView" />
+
+    <Button
+        android:id="@+id/sharePhotoButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_share_photo"
+        app:layout_constraintBottom_toBottomOf="@+id/vkPhotoCircyleImageView"
+        app:layout_constraintEnd_toStartOf="@+id/shareHistoryButton"
+        app:layout_constraintTop_toTopOf="@+id/vkPhotoCircyleImageView" />
+
+    <View
+        android:id="@+id/twoDivider"
+        style="@style/Divider"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/vkPhotoCircyleImageView" />
+
+    <TextView
+        android:id="@+id/photoLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Photos"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twoDivider" />
+
+    <TextView
+        android:id="@+id/photoCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="5"
+        android:textColor="@color/colorVkTextGray"
+        app:layout_constraintBottom_toBottomOf="@+id/photoLabelTextView"
+        app:layout_constraintStart_toEndOf="@+id/photoLabelTextView"
+        app:layout_constraintTop_toTopOf="@+id/photoLabelTextView" />
+
+    <HorizontalScrollView
+        android:id="@+id/photoScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photoLabelTextView">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/onePhotoImageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_photo_1" />
+
+            <ImageView
+                android:id="@+id/twoPhotoImageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_photo_2" />
+
+            <ImageView
+                android:id="@+id/threePhotoImageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_photo_3" />
+
+            <ImageView
+                android:id="@+id/fourPhotoImageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_photo_4" />
+
+            <ImageView
+                android:id="@+id/fivePhotoImageView"
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/ic_photo_5" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorVkNavigation"
+        app:itemIconTint="@color/colorVkIconGray"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu_vk_bottom_navigation" />
 
 </android.support.constraint.ConstraintLayout>

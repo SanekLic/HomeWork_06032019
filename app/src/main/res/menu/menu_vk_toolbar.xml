@@ -14,5 +14,4 @@
         android:orderInCategory="200"
         android:title="Open in browser"
         app:showAsAction="never" />
-
 </menu>

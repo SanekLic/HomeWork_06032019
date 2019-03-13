@@ -6,9 +6,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="Divider">
+    <style name="Divider8dp">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">8dp</item>
         <item name="android:background">@color/colorVkDivider</item>
+    </style>
+
+    <style name="Divider1dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorGooglePodcastsDivider</item>
     </style>
 </resources>

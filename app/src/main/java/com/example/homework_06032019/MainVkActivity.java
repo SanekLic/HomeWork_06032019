@@ -42,7 +42,6 @@ public class MainVkActivity extends AppCompatActivity {
 
     private void setToolbar() {
         setSupportActionBar(mainVkToolbar);
-        mainVkToolbar.inflateMenu(R.menu.menu_vk_toolbar);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);

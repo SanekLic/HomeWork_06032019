@@ -19,7 +19,6 @@ public class MainGooglePodcastsActivity extends AppCompatActivity {
 
         mainGoolgePodcastsToolbar = findViewById(R.id.mainGoolgePodcastsToolbar);
         setSupportActionBar(mainGoolgePodcastsToolbar);
-        mainGoolgePodcastsToolbar.inflateMenu(R.menu.menu_google_podcasts_toolbar);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(false);
